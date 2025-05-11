@@ -1,0 +1,313 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma,
+     Geneva, Verdana, sans-serif;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1pz solid #eee;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    font-size: 20px;
+}
+
+.resto{
+    font-weight: bold;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.nav-links a {
+    text-decoration: none;
+    color:#222;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-links a:hover{
+    color: #00a86b;
+}
+.intro-section{
+    background-image: url(meal.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: white;
+}
+
+.intro-content{
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+.intro-section h5{
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.intro-section h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.intro-content button{
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.intro-content button:hover{
+    background-color: white;
+    color: #333;
+}
+
+.about-section{
+    background-image: url(about.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: white;
+}
+
+.about-section p{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    background-color: rgba(0,0,0,0.5)
+}
+.menu-section{
+    grid-template-columns:repeat(3,4fr);
+   align-items: stretch; 
+   display: grid;
+
+}
+.Our{
+    font-size: large;
+    letter-spacing: 5px ;
+    margin-top: 100px;
+    text-align: center;
+    color: orange;
+}
+.grid-container{
+    display: grid;
+    margin-top: 50px;
+}
+.menu-section img{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.deli{
+    margin-top: 100px;
+    font-weight: 700;
+    color: #e60000;
+}
+
+.button-primary{
+    color: white;
+    background-color: #ffa31a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: large;
+}   
+
+.button-primary:hover{
+    background-color: #cc8400;
+}
+.button-secondary{
+    color: white;
+    background-color: #ff4d4d;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: large;
+}
+.button-secondary:hover{
+    background-color: #e60000;
+}
+
+.hero-content{
+    background-image: url(plate.jpg);
+    color: white;
+    text-align: center;
+    padding: 80px;
+    height: 100vh; 
+    justify-content: center;
+}
+.hero-content h1{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.hero-content p{
+    color: #ddd;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: left;
+}
+.info-blocks{
+    display: flex;
+     /* flex-wrap: wrap;  */
+    justify-content: center;
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: pink;
+}
+.contact-us,.reservation,.working-hours{
+    background-color: beige;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    flex-basis: calc(33.33%-20px);
+    box-sizing: border-box;
+    color: yellowgreen;
+    height: 200%;
+}
+.contact-us h2,.reservation h2,.working-hours h2{
+    color: greenyellow;
+    margin-bottom: 15px;
+}
+.contact-us p{
+    margin-bottom: 10px;
+    color: #555;
+}
+.social-links img{
+    width: 80px;
+    height: 80px;
+}
+.reservation{
+    background-color: #222222;
+}
+
+.reservation form{
+    display: flex;
+    flex-direction: column; 
+    /* gap: 10px; */
+     margin-top: 15px; 
+
+}
+.reservation input[type="text"],.reservation input[type="number"],
+.reservation input[type="email"],.reservation input[type="tel"]{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+} 
+.reservation button[type="submit"]{
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.reservation button[type="submit"]:hover{
+    background-color: #0056b3;
+}
+.working-hours p{
+    margin-bottom: 8px;
+    color: #666;
+} 
+@media(max-width:768px){
+    .contact-us,.reservation,.working-hours{
+        flex-basis: calc(50%-20px);
+    }
+}
+@media(max-width:576px){
+    .contact-us,.reservation,.working-hours{
+        flex-basis: 100%
+    }
+}
+
+.event-section{
+    background-image: url(download.jpeg);
+    background-position: center;
+    background-size: cover;
+     height: 100vh;  
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    padding: 20px;
+}
+
+.events h1,h5 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+} 
+
+
+.grid-view{
+    padding: 40px 20px;
+    text-align: center;
+}
+.grid-heading{
+    font-size: 32px;
+    margin-top: 700px;
+    color: #333;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.grid-items{
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.grid-items img{
+    width:100% ;
+    height:200px ;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
